@@ -12,13 +12,13 @@ high_potential_forwards = data %>% filter((potential>overall) & (overall>=65) & 
 write.csv(high_potential_forwards,"high_potential_forwards.csv")
 
 #HIGH POTENTIAL MIDFIELDERS
-high_potential_midfielders = data %>% filter((potential>overall) & (overall>=67) & (potential-overall >=7)) %>% filter(team_position == "LM" | team_position =="RM" | team_position=="RCM" | team_position=="LCM" | team_position=="CM" | team_position=="CDM" | team_position=="LDM" | team_position=="RDM" ) %>% select(-body_type,-long_name,-dob,-international_reputation,-real_face,-nation_position,-nation_jersey_number,-ls,-st,-rs,-lw,-lf,-cf,-rf,-rw,-lam,-cam,-ram,-lm,-lcm,-cm,-rcm,-rm,-lwb,-rwb,-ldm,-cdm,-rdm,-lb,-lcb,-cb,-rcb,-rb)
+high_potential_midfielders = data %>% filter((potential>overall) & (overall>=65) & (potential-overall >=5)) %>% filter(team_position == "LM" | team_position =="RM" | team_position=="RCM" | team_position=="LCM" | team_position=="CM" | team_position=="CDM" | team_position=="LDM" | team_position=="RDM" ) %>% select(-body_type,-long_name,-dob,-international_reputation,-real_face,-nation_position,-nation_jersey_number,-ls,-st,-rs,-lw,-lf,-cf,-rf,-rw,-lam,-cam,-ram,-lm,-lcm,-cm,-rcm,-rm,-lwb,-rwb,-ldm,-cdm,-rdm,-lb,-lcb,-cb,-rcb,-rb)
 write.csv(high_potential_midfielders,"high_potential_midfielders.csv")
 
 #HIGH POTENTIAL DEFENDERS
-high_potential_defenders = data %>% filter((potential>overall) & (overall>=67) & (potential-overall >=7)) %>% filter(team_position == "CB" | team_position =="RCB" | team_position=="LCB" | team_position=="LB" | team_position=="RB" | team_position=="LWB" | team_position=="RWB" ) %>% select(-body_type,-long_name,-dob,-international_reputation,-real_face,-nation_position,-nation_jersey_number,-ls,-st,-rs,-lw,-lf,-cf,-rf,-rw,-lam,-cam,-ram,-lm,-lcm,-cm,-rcm,-rm,-lwb,-rwb,-ldm,-cdm,-rdm,-lb,-lcb,-cb,-rcb,-rb)
+high_potential_defenders = data %>% filter((potential>overall) & (overall>=65) & (potential-overall >=5)) %>% filter(team_position == "CB" | team_position =="RCB" | team_position=="LCB" | team_position=="LB" | team_position=="RB" | team_position=="LWB" | team_position=="RWB" ) %>% select(-body_type,-long_name,-dob,-international_reputation,-real_face,-nation_position,-nation_jersey_number,-ls,-st,-rs,-lw,-lf,-cf,-rf,-rw,-lam,-cam,-ram,-lm,-lcm,-cm,-rcm,-rm,-lwb,-rwb,-ldm,-cdm,-rdm,-lb,-lcb,-cb,-rcb,-rb)
 write.csv(high_potential_defenders,"high_potential_defenders.csv")
 
 #ALL HIGH POTENTIAL PLAYERS
-high_potential_players = data %>% filter((potential>overall)  & (potential-overall >=10)) %>% select(-body_type,-long_name,-dob,-international_reputation,-real_face,-nation_position,-nation_jersey_number,-ls,-st,-rs,-lw,-lf,-cf,-rf,-rw,-lam,-cam,-ram,-lm,-lcm,-cm,-rcm,-rm,-lwb,-rwb,-ldm,-cdm,-rdm,-lb,-lcb,-cb,-rcb,-rb)
+high_potential_players = data %>% filter((potential>overall)  & (potential-overall >=12)) %>% select(-body_type,-long_name,-dob,-international_reputation,-real_face,-nation_position,-nation_jersey_number,-ls,-st,-rs,-lw,-lf,-cf,-rf,-rw,-lam,-cam,-ram,-lm,-lcm,-cm,-rcm,-rm,-lwb,-rwb,-ldm,-cdm,-rdm,-lb,-lcb,-cb,-rcb,-rb)
 write.csv(high_potential_players,"high_potential_players.csv")
