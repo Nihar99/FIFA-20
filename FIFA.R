@@ -20,5 +20,5 @@ high_potential_defenders = data %>% filter((potential>overall) & (overall>=65) &
 write.csv(high_potential_defenders,"high_potential_defenders.csv")
 
 #ALL HIGH POTENTIAL PLAYERS
-high_potential_players = data %>% filter((potential>overall)  & (potential-overall >=15)) %>% select(-body_type,-long_name,-dob,-international_reputation,-real_face,-nation_position,-nation_jersey_number,-ls,-st,-rs,-lw,-lf,-cf,-rf,-rw,-lam,-cam,-ram,-lm,-lcm,-cm,-rcm,-rm,-lwb,-rwb,-ldm,-cdm,-rdm,-lb,-lcb,-cb,-rcb,-rb)
+high_potential_players = data %>% filter((potential>overall) & (overall>=55)  & (potential-overall >=15)) %>% select(-body_type,-long_name,-dob,-international_reputation,-real_face,-nation_position,-nation_jersey_number,-ls,-st,-rs,-lw,-lf,-cf,-rf,-rw,-lam,-cam,-ram,-lm,-lcm,-cm,-rcm,-rm,-lwb,-rwb,-ldm,-cdm,-rdm,-lb,-lcb,-cb,-rcb,-rb)
 write.csv(high_potential_players,"high_potential_players.csv")
